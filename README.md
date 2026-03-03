@@ -225,21 +225,6 @@
 - 전쟁 설정/데이터: `plugins/HGFramework/estate-war/*.yml`
 - 디스코드 연동 설정/데이터: `plugins/HGFramework/estate-discord/*.yml`
 
-## 위키 / 상세 문서
-
-- HGFramework 위키 홈: `docs/HGFramework wiki/위키 홈.md`
-- GitHub Wiki 소스 홈: `docs/github-wiki/Home.md`
-- GitHub Wiki 업로드 가이드: `docs/github-wiki/위키-업로드-가이드.md`
-- 사유지 통합 허브: `docs/HGFramework wiki/사유지 시스템/00. 시작하기/위키 홈.md`
-- 사유지 최종 운영 가이드(런북): `docs/HGFramework wiki/사유지 시스템/02. 관리자 가이드/최종 운영 가이드.md`
-- 사유지 코어: `docs/HGFramework wiki/사유지 코어 시스템/00. 시작하기/위키 홈.md`
-- 사유지 경제: `docs/HGFramework wiki/사유지 경제 시스템/00. 시작하기/위키 홈.md`
-- 사유지 구역·임대·판매: `docs/HGFramework wiki/사유지 구역·임대·판매 시스템/00. 시작하기/위키 홈.md`
-- 사유지 국가: `docs/HGFramework wiki/사유지 국가 시스템/00. 시작하기/위키 홈.md`
-- 사유지 전쟁: `docs/HGFramework wiki/사유지 전쟁 시스템/00. 시작하기/위키 홈.md`
-- 사유지 디스코드 연동: `docs/HGFramework wiki/사유지 디스코드 연동 시스템/00. 시작하기/위키 홈.md`
-- 사유지 설계/QA 문서 묶음: `docs/estate-project`
-
 ## 의존성
 
 - 필수: Vault
