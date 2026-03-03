@@ -238,18 +238,7 @@ HGFramework는 멀티모듈 구조로 구성된 Paper/Spigot `1.21.11` 서버용
 - 사유지 디스코드 연동: `docs/HGFramework wiki/사유지 디스코드 연동 시스템/00. 시작하기/위키 홈.md`
 - 사유지 설계/QA 문서 묶음: `docs/estate-project`
 
-## 빌드
-
-- 플러그인 JAR 생성: `.\gradlew :modules:core:shadowJar`
-- 빠른 빌드: `.\gradlew buildPlugin`
-- 산출물: `build_outputs/HGFramework.jar`
-
 ## 의존성
 
 - 필수: Vault
 - 선택: PlaceholderAPI (`%hgframework_balance_formatted%`, `%hgframework_wallet_formatted%` 등 제공)
-
-
-## 문서 갱신 정책
-
-- 이 README는 요청이 있을 때만 갱신합니다.
