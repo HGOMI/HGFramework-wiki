@@ -62,6 +62,7 @@
 ## 명령어 사용법
 
 - `/돈 [플레이어]`: 지갑 잔액 확인
+- `/돈 상태`: 현재 경제 모드/백엔드/Vault provider 상태 확인(관리자)
 - `/돈지급 [플레이어] [금액]`: 재화 지급
 - `/돈차감 [플레이어] [금액]`: 재화 차감
 - `/돈설정 [플레이어] [금액]`: 재화 설정
@@ -198,6 +199,17 @@
 
 ## 주요 설정
 
+- 경제 백엔드 모드:
+  - `config.yml` -> `currency.mode = internal|vault|disabled`
+  - `internal`: HGFramework 내부 지갑
+  - `vault`: Vault 외부 Economy 제공자 사용
+  - `disabled`: 돈 기능 비활성
+- Vault provider 미탐지 정책:
+  - `config.yml` -> `currency.vault.on-provider-missing = fallback-disabled|fail-fast`
+  - `fallback-disabled`: 서버는 계속 동작, 돈 기능만 비활성 폴백
+  - `fail-fast`: 서버 시작/리로드 실패 처리
+- 레거시 호환:
+  - `currency.mode` 미설정 시 `currency.enabled` 값을 자동 추론(경고 로그 출력)
 - 유저 간 송금 on/off: `config.yml` -> `currency.player-transfer.enabled`
 - 닉네임 시스템 on/off: `config.yml` -> `nickname.enabled`
 - 닉네임 정책: `config.yml` -> `nickname.policy.*`
@@ -228,4 +240,6 @@
 ## 의존성
 
 - 필수: Vault
-- 선택: PlaceholderAPI (`%hgframework_balance_formatted%`, `%hgframework_wallet_formatted%` 등 제공)
+- 선택: PlaceholderAPI
+  - 재화: `%hgframework_balance%`, `%hgframework_balance_formatted%`, `%hgframework_wallet%`, `%hgframework_wallet_formatted%`
+  - 닉네임: `%hgnickname_nickname%`, `%hgnickname_display%`, `%hgnickname_realname%`, `%hgnickname_has_nickname%`
